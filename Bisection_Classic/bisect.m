@@ -10,5 +10,6 @@ while error>p
     end
     error = abs(b-a); %update error 
 end
+disp(c)
 end
 
