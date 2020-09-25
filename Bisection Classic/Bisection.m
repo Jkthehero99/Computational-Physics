@@ -9,9 +9,10 @@
 a=input('Enter a: '); 
 b=input('Enter b: ');
 p=input('Enter prescission needed(example 1e-3): ');
+z=input('Iteration limit (enter -1 if no limit): ');
 
 if check_bisect_condition(a,b) == 1 %verify if the bisection condition is satisfied or not
-    bisect(a,b,p);
+    bisect(a,b,p,z);
 else
     disp('Please enter a valid start condition')
 end
